@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+<title>Black-Scholes</title>
+<link rel="stylesheet" type="text/css" href="css/Stylesheet.css">
+
+
+<script type="text/javascript" >
+
+
+function Validate(){
+	var Spot_Price = document.myform1.S.value;
+	      var Strike_Price = document.myform1.X.value;
+		var Maturity_Time = document.myform1.T.value;
+		var Risk_Free_rate = document.myform1.r.value;
+		var Volatility = document.myform1.v.value;
+		var box1=document.myform1.radiobutton[0];
+		var box2=document.myform1.radiobutton[1];
+
+	if(box1.checked==false && box2.checked==false)
+	{
+		alert("Please select Call or Put option");
+		return false;
+	}
+	
+	if(Spot_Price =="")
+	{
+		alert("Spot price Cannot be blank");
+		return false;
+	}
+	if(Strike_Price=="")
+	{
+		alert("Strike Price cannot be blank");
+		return false;
+	}
+	if(Maturity_Time=="")
+	{
+		alert("Maturity time cannot be blank");
+		return false;
+	}
+	if(Volatility=="")
+	{
+		alert("Volatility Cannot be blank");
+		return false;
+	}
+	
+		}
+
+
+</script>
+
+
+</head>
+
+<body>
+<div id="description"></div>
+<!--container start-->
+<div id="container">
+  <div id="container_body">
+    <div>
+      <h2 class="form_title">Black Scholes Merton's Formula</h2>
+      <p class="head_para">Option Pricing Model</p>
+    </div> 
+    <!--Form  start-->
+    <div id="myform1">
+      <div class="firstnameorlastname">
+       <form name="myform1"  action="newBlack.php" onSubmit="return Validate()">
+       <div id="errorBox"></div>
+       
+       </div>
+         <div id="radio_button">
+        <input type="radio" name="radiobutton" value="c">
+        <label >Call</label>
+        &nbsp;&nbsp;&nbsp;
+        <input type="radio" name="radiobutton" value="p">
+        <label >Put</label>
+      </div>
+
+
+      <div id="Spot_Price">
+
+        <input type="text" name="S" value=""  placeholder="Spot Price" class="input_Spot">
+      </div>
+      <div id="Spot_Price">
+
+        <input type="text" name="X" value=""  placeholder="Strike Price" class="input_Spot">
+      </div>
+      <div id="Maturity_Time">
+        <input type="text" name="T" value=""  placeholder="Years to Maturity" class="Maturity">
+      </div>
+      <div id="Risk_Free_Int">
+        <input type="text" name="r" value=""  placeholder="Risk Free rate (%)" class="input_Risk_Int">
+      </div>
+      <div id="Risk_Free_Int">
+        <input type="text" name="v" value=""  placeholder="Volatility (%)" class="input_Risk_Int">
+      </div>
+      <!--birthday details start-->
+      
+      
+      <!--birthday details ends-->
+      
+       <div>
+       <p> <input type="submit" value="Calculate"> </p>
+
+      </div>
+     </form>
+    </div>
+    <!--form ends--> 
+  </div>
+</div>
+<!--container ends-->
+</body>
+</html>

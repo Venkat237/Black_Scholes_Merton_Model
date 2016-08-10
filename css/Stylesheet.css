@@ -1,0 +1,102 @@
+<style>
+*{
+	margin:0px;
+	padding:0px;
+	}
+body{
+	font-family:Tahoma, Geneva, sans-serif;
+	}
+#container{
+	width:550px;
+	background-color:rgba(250,250,252,.9);
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	box-shadow:0 0 3px #999;
+	}
+#container_body{
+	padding:20px;
+	}
+.form_title{
+	font-size:35px;
+	color:#141823;
+	text-align:center;
+	padding:10px;
+	font-weight:normal;
+	}
+.head_para{
+	font-size:19px;
+	color:#99a2a7;
+	text-align:center;
+	font-weight:normal;
+	}
+#form_name{
+	padding:25px 0 0 15px;
+	}
+.firstnameorlastname{
+	 margin-right:20px;
+	}
+.input_name{
+	width:207px;
+	padding:5px;
+	font-size:18px;
+	}
+#Spot_Price{
+	clear:both;
+	padding:15px 0 10px 0px;
+	}
+.input_Spot{
+	width:434px;
+	padding:5px;
+	font-size:18px;
+	}
+#Maturity_Time{
+	padding:10px 0 10px 0px;
+	}
+.Maturity{
+	width:434px;
+	padding:5px;
+	font-size:18px;
+	}
+#Risk_Free_Int{
+	padding:10px 0 10px 0px;
+	}
+.input_Risk_Int{
+	width:434px;
+	padding:5px;
+	font-size:18px;
+	}
+
+select{
+	padding:5px;
+	}
+
+#radio_button{
+	padding:10px 0 0 0;
+	}
+#calculate{
+	font-size:14px;
+	color:#FFF;
+	text-align:center;
+	background-color:#3B5998;
+	padding:10px;
+	margin-top:10px;
+	cursor: pointer;
+	width:430px;
+	}
+#errorBox{
+	color:#F00;
+	}
+input[type=submit] {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+     box-shadow: 0 6px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+
+</style>
